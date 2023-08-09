@@ -33,9 +33,9 @@ public class scenario {
         Scanner sc = new Scanner(System.in);
         System.out.println("\t\t MENU \t\t");
 
-        System.out.println("1]. Breakfast  -> C] Chai , T] Toast");
-        System.out.println("2]. Lunch");
-        System.out.println("3]. Dinner");
+        System.out.println("1]. Breakfast  ->  Chai ,  Toast");
+        System.out.println("2]. Lunch -> Chapati , Shahi Paneer");
+        System.out.println("3]. Dinner -> Dal , Rice");
         System.out.println("Enter the choice you want :");
         choice = sc.next();
 
@@ -45,13 +45,17 @@ public class scenario {
                 System.out.println("Chai and Tost");
 
                 break;
-            case "2", "Chapatti", "Shahi Paneer":
+            case "2", "Chapati", "Shahi Paneer":
                 System.out.println("Lunch item :");
                 System.out.println("Chapatti and Shahi Paneer");
 
                 break;
-
+            case "3", "Dal", "Rice":
+                System.out.println("Dinner item :");
+                System.out.println("Rice and dal");
+                break;
             default:
+                System.out.println("Invalid Choice !!!!");
                 break;
         }
 
